@@ -70,4 +70,7 @@ w2 -= learning rate * dSSR/dw2 \
 Phew! That was a lot of math. If u made it this far, you should be proud of yourself! 
 
 # Model Performance
-
+Plotting the SSR against steps, one can see that the model performance plateaus very quickly: \
+![alt text](https://github.com/kwquan/neural_network_from_scratch/blob/main/error.png)
+Of course, this simple model is insufficient to predict the classes well. \
+Nonetheless, it's a good start in getting to understand how neural networks work!
