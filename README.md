@@ -31,6 +31,6 @@ Note that we use Relu for both nodes. \
 Finally, we multiply y1 & y2 to the respective weights & sum them according to: \
 top = y1 * w3 \
 bottom = y2 * w4 \
-output = top + bottom + b3 
+prediction = max(0,top + bottom + b3) 
 
 
