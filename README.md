@@ -13,8 +13,8 @@ Next, we create a dataframe and name the data points 'dosage'. \
 For data points with values <= 0.3 or >= 0.7, they are labelled as 0, else 1['outcome']. 
 
 # Network Architecture
+We use a simple network architecture comprising of 1 input layer, 1 hidden layer[2 nodes] & 1 output layer. 
 ![alt text](https://github.com/kwquan/neural_network_from_scratch/blob/main/nn.jpg)
-We use a simple network architecture comprising of 1 input layer, 1 hidden layer[2 nodes] & 1 output layer. \
 
 # Forward Propagation 
 Hidden layer consist of 2 nodes. \
