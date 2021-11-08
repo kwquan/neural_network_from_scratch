@@ -21,12 +21,12 @@ Hidden layer consist of 2 nodes. \
 First node has weight w1 & bias b1. Input is multipled to the weight & added to the bias according to: \
 x1 = input * w1 + b1 \
 Second node has weight w2 & bias b2. Input is multipled to the weight & added to the bias according to:\
-x2 = input * w2 + b2 \
+x2 = input * w2 + b2 
 
 Next, both x1 & x2 are passed to the respective activation functions: \
 y1 = max(0,x1) \
 y2 = max(0,x2) \
-Note that we use Relu for both nodes. \
+Note that we use Relu for both nodes. 
 
 Finally, we multiply y1 & y2 to the respective weights & sum them according to: \
 top = y1 * w3 \
@@ -39,14 +39,14 @@ SSR = sum(observed - (top + bottom + b3))^2 = sum(observed - (w3y1 + w4y2 +b3))^
 
 Let's look at b3: \
 dSSR/db3 = -2 * sum(observed - (w3y1 + w4y2 +b3)) \
-b3 -= learning rate * dSSR/db3 \
+b3 -= learning rate * dSSR/db3 
 
 Let's look at w3 & w4: \
 dSSR/dw3 = -2 * sum(observed - (w3y1 + w4y2 +b3)) * y1 \
 dSSR/dw4 = -2 * sum(observed - (w3y1 + w4y2 +b3)) * y2 \
 We update w3 & w4 as follows: \
 w3 -= learning rate * dSSR/dw3 \
-w4 -= learning rate * dSSR/dw4 \
+w4 -= learning rate * dSSR/dw4 
 
 Let's look at b1 & b2: \
 Since we are using Relu activation functions, the derivatives will be 1 most of the time[when y1 = x1] & 0 rarely[if max(0,x1) = 0] \
