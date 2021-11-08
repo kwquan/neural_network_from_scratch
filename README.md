@@ -56,7 +56,7 @@ dSSR/db2[Using chain rule] = dSSR/dPredicted * dPredicted/dy2 * dy2/dx2 * dx2/db
                            = -2 * sum(observed - predicted) * w4 * (1 or 0) \
 We update b1 & b2 as follows: \
 b1 -= learning rate * dSSR/db1 \
-b2 -= learning rate * dSSR/db2 \     
+b2 -= learning rate * dSSR/db2      
 
 Let's look at w1 & w2: \
 dSSR/dw1[Using chain rule] = dSSR/dPredicted * dPredicted/dy1 * dy1/dx1 * dx1/dw1 \
@@ -65,7 +65,7 @@ dSSR/dw2[Using chain rule] = dSSR/dPredicted * dPredicted/dy2 * dy2/dx2 * dx2/dw
                            = -2 * sum(observed - predicted) * w4 * (1 or 0) * input \
 We update w1 & w2 as follows: \
 w1 -= learning rate * dSSR/dw1 \
-w2 -= learning rate * dSSR/dw2 \ 
+w2 -= learning rate * dSSR/dw2 
 
 Phew! That was a lot of math. If u made it this far, you should be proud of yourself! 
 
